@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card m-3">
+      <div class="card-body">
+        <h2>Register :</h2>
+        <hr class="w-25%" />
+        <form method="POST" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-4">
+                <label class="form-label" for="competition">Select Competition</label>
+                <select id="competition" class="form-control" [(ngModel)]="selectedCompetition" name="competition">
+                  <option class="form-control" *ngFor="let competition of competitionList|async" [value]="competition.code" >{{competition.code}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-4">
+                <label class="form-label" for="member">Select member</label>
+                <select id="member" class="form-control" [(ngModel)]="selectedMember" name="member">
+                  <option class="form-control" *ngFor="let member of memberList|async" [value]="member.num" >{{member.name}}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row float-lg-right">
+            <div class="col-2">
+              <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

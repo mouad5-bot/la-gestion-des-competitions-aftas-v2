@@ -1,0 +1,104 @@
+<div class="fixed-button">
+  <a href="https://codedthemes.com/item/gradient-able-admin-template" target="_blank" class="btn btn-md btn-primary">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro
+  </a>
+</div>
+<!-- Pre-loader start -->
+<div class="theme-loader">
+  <div class="loader-track">
+    <div class="loader-bar"></div>
+  </div>
+</div>
+<!-- Pre-loader end -->
+<div id="pcoded" class="pcoded">
+  <div class="pcoded-overlay-box"></div>
+  <div class="pcoded-container navbar-wrapper">
+
+    <nav class="navbar header-navbar pcoded-header">
+      <div class="navbar-wrapper">
+        <div class="navbar-logo">
+<!--          <a routerLink="">-->
+            <h2  class="navbar-container container-fluid ml-3 mt-2" >AFTAS</h2>
+<!--          </a>-->
+        </div>
+
+        <div class="navbar-container container-fluid">
+          <ul class="nav-right">
+
+            <li class="user-profile header-notification">
+                <span>ADMINISTRATOR</span>
+                <i class="ti-angle-down"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="pcoded-main-container">
+      <div class="pcoded-wrapper">
+        <nav class="pcoded-navbar">
+          <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+          <div class="pcoded-inner-navbar main-menu">
+
+            <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Dashboard</div>
+            <ul class="pcoded-item pcoded-left-item">
+              <li class="">
+                <a routerLink="competition/list">
+                  <span class="pcoded-micon"> <i class="bi bi-calendar-check"></i> </span>
+                  <span class="pcoded-mtext">Competition</span>
+                </a>
+              </li>
+              <li class="">
+                <a routerLink="member/list">
+                  <span class="pcoded-micon"> <i class="bi bi-people"></i> </span>
+                  <span class="pcoded-mtext">Member</span>
+                </a>
+              </li>
+              <li class="">
+                <a routerLink="ranking/list">
+                  <span class="pcoded-micon"> <i class="bi bi-arrow-right-square"></i> </span>
+                  <span class="pcoded-mtext">Ranking</span>
+                </a>
+              </li>
+              <li class="">
+                <a routerLink="fish/list">
+                  <span class="pcoded-micon"> <i class="bi bi-caret-down"></i> </span>
+                  <span class="pcoded-mtext">Fish</span>
+                </a>
+              </li>
+              <li class="">
+                <a routerLink="hunting/list">
+                  <span class="pcoded-micon">  <i class="bi bi-basket3"></i> </span>
+                  <span class="pcoded-mtext">Hunting</span>
+                </a>
+              </li>
+              <li class="">
+                <a routerLink="level/list">
+                  <span class="pcoded-micon"> <i class="bi bi-bar-chart-line"></i> </span>
+                  <span class="pcoded-mtext">Level</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="pcoded-content">
+          <div class="pcoded-inner-content">
+            <div class="main-body">
+              <div class="page-wrapper">
+
+                <div class="page-body">
+                  <div>
+                    <router-outlet></router-outlet>
+                  </div>
+                </div>
+
+                <div id="styleSelector">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

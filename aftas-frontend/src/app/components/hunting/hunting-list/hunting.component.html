@@ -1,0 +1,38 @@
+<div class="card">
+  <div class="card-header">
+    <a class="btn btn-primary btn-round" routerLink="/hunting/add"> Add a Hunt</a>
+    <div class="card-header-right">
+      <ul class="list-unstyled card-option">
+        <li><i class="fa fa-chevron-left"></i></li>
+        <li><i class="fa fa-window-maximize full-card"></i></li>
+        <li><i class="fa fa-minus minimize-card"></i></li>
+        <li><i class="fa fa-times close-card"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-block table-border-style">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Member</th>
+          <th>Competition</th>
+          <th>Number Of Fish</th>
+          <th></th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let hunt of huntList">
+          <td> {{ hunt.memberName }} </td>
+          <td> {{ hunt.competitionCode }} </td>
+          <td> {{ hunt.numberOfFish }} </td>
+          <td></td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-header">
+    <a class="btn btn-primary btn-round" routerLink="/fish/add"> Add a Fish</a>
+    <div class="card-header-right">
+      <ul class="list-unstyled card-option">
+        <li><i class="fa fa-chevron-left"></i></li>
+        <li><i class="fa fa-window-maximize full-card"></i></li>
+        <li><i class="fa fa-minus minimize-card"></i></li>
+        <li><i class="fa fa-times close-card"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-block table-border-style">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>name</th>
+          <th>average weight</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let fish of fishList">
+          <td> {{ fish.name }} </td>
+          <td> {{ fish.averageWeight }} </td>
+          <td></td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
