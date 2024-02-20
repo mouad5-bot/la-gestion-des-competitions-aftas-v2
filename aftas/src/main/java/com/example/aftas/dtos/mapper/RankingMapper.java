@@ -1,6 +1,6 @@
-package com.example.aftas.DTO.mapper;
+package com.example.aftas.dtos.mapper;
 
-import com.example.aftas.DTO.RankingDTO;
+import com.example.aftas.dtos.RankingDTO;
 import com.example.aftas.model.Ranking;
 
 public class RankingMapper {

@@ -1,4 +1,4 @@
-package com.example.aftas.DTO;
+package com.example.aftas.dtos;
 
 import lombok.*;
 

@@ -1,13 +1,9 @@
-package com.example.aftas.DTO;
+package com.example.aftas.dtos;
 
-import com.example.aftas.model.Hunting;
-import com.example.aftas.model.Level;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
-import java.util.List;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 
 @Getter

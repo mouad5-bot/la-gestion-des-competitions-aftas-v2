@@ -1,16 +1,11 @@
-package com.example.aftas.DTO;
+package com.example.aftas.dtos;
 
-import com.example.aftas.model.Competition;
-import com.example.aftas.model.Hunting;
-import com.example.aftas.model.Ranking;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.List;
 
 @Getter
 @Setter
@@ -20,7 +15,6 @@ import java.util.List;
 public class CompetitionDTO {
 
     private String code;
-
     @NotNull(message = "Date of competition cannot be null")
     private LocalDate date;
 

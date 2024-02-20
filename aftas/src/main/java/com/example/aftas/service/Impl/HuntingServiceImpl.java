@@ -1,7 +1,7 @@
 package com.example.aftas.service.Impl;
 
-import com.example.aftas.DTO.HuntingDTORequest;
-import com.example.aftas.DTO.SaveHuntDTO;
+import com.example.aftas.dtos.HuntingDTORequest;
+import com.example.aftas.dtos.SaveHuntDTO;
 import com.example.aftas.model.*;
 import com.example.aftas.repository.CompetitionRepository;
 import com.example.aftas.repository.FishRepository;
@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

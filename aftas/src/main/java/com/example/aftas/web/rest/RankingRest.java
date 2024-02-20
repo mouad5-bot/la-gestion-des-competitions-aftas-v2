@@ -1,12 +1,8 @@
 package com.example.aftas.web.rest;
 
-import com.example.aftas.DTO.MemberDTO;
-import com.example.aftas.DTO.RankingDTO;
+import com.example.aftas.dtos.RankingDTO;
 import com.example.aftas.handler.response.ApiResponse;
-import com.example.aftas.model.Member;
-import com.example.aftas.model.Ranking;
 import com.example.aftas.service.RankingService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +11,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController

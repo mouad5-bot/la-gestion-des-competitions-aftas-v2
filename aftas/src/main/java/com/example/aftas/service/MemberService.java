@@ -1,8 +1,7 @@
 package com.example.aftas.service;
 
-import com.example.aftas.DTO.MemberDTO;
+import com.example.aftas.dtos.MemberDTO;
 import com.example.aftas.model.Member;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;

@@ -1,12 +1,10 @@
 package com.example.aftas.web.rest;
 
 
-import com.example.aftas.DTO.HuntingDTORequest;
-import com.example.aftas.DTO.SaveHuntDTO;
+import com.example.aftas.dtos.HuntingDTORequest;
+import com.example.aftas.dtos.SaveHuntDTO;
 import com.example.aftas.handler.response.ApiResponse;
-import com.example.aftas.model.Hunting;
 import com.example.aftas.service.HuntingService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -16,8 +14,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor

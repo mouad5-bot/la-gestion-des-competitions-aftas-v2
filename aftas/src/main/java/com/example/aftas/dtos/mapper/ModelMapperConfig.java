@@ -1,4 +1,4 @@
-package com.example.aftas.Config;
+package com.example.aftas.dtos.mapper;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

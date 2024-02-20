@@ -1,16 +1,14 @@
 package com.example.aftas.service.Impl;
 
-import com.example.aftas.DTO.MemberDTO;
+import com.example.aftas.dtos.MemberDTO;
 import com.example.aftas.model.Member;
 import com.example.aftas.repository.MemberRepository;
 import com.example.aftas.service.MemberService;
 import org.modelmapper.ModelMapper;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class MemberServiceImpl implements MemberService {

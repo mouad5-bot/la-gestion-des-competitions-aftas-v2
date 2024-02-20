@@ -1,6 +1,6 @@
 package com.example.aftas.service.Impl;
 
-import com.example.aftas.DTO.FishDTO;
+import com.example.aftas.dtos.FishDTO;
 import com.example.aftas.model.Fish;
 import com.example.aftas.repository.FishRepository;
 import com.example.aftas.service.FishService;

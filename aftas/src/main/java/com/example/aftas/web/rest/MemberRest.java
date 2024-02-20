@@ -1,10 +1,9 @@
 package com.example.aftas.web.rest;
 
-import com.example.aftas.DTO.MemberDTO;
+import com.example.aftas.dtos.MemberDTO;
 import com.example.aftas.handler.response.ApiResponse;
 import com.example.aftas.model.Member;
 import com.example.aftas.service.MemberService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -13,6 +12,7 @@ import org.springdoc.api.annotations.ParameterObject;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController

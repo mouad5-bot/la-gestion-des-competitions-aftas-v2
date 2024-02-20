@@ -2,10 +2,12 @@ package com.example.aftas.model;
 
 import com.example.aftas.model.embeddedKey.RankingKey;
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.*;
+
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.MapsId;
 
 @Entity
 @Getter
