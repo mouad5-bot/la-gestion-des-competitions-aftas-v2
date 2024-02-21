@@ -1,4 +1,4 @@
-package com.example.aftas.service.Impl;
+package com.example.aftas.service.impl;
 
 import com.example.aftas.model.Competition;
 import com.example.aftas.repository.CompetitionRepository;

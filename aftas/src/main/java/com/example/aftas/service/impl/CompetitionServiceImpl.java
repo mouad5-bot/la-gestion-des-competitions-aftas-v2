@@ -1,16 +1,13 @@
-package com.example.aftas.service.Impl;
+package com.example.aftas.service.impl;
 
-import com.example.aftas.handler.response.ApiResponse;
 import com.example.aftas.model.Competition;
 import com.example.aftas.repository.CompetitionRepository;
 import com.example.aftas.service.CompetitionService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 

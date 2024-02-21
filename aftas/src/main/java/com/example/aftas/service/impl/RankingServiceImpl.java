@@ -1,4 +1,4 @@
-package com.example.aftas.service.Impl;
+package com.example.aftas.service.impl;
 
 import com.example.aftas.dtos.RankingDTO;
 import com.example.aftas.dtos.mapper.RankingMapper;

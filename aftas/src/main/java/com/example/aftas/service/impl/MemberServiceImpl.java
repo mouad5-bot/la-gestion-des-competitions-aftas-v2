@@ -1,4 +1,4 @@
-package com.example.aftas.service.Impl;
+package com.example.aftas.service.impl;
 
 import com.example.aftas.dtos.MemberDTO;
 import com.example.aftas.model.Member;

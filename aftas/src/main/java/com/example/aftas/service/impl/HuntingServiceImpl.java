@@ -1,4 +1,4 @@
-package com.example.aftas.service.Impl;
+package com.example.aftas.service.impl;
 
 import com.example.aftas.dtos.HuntingDTORequest;
 import com.example.aftas.dtos.SaveHuntDTO;

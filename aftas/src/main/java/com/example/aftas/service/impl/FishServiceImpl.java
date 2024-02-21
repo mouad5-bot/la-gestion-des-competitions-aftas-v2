@@ -1,4 +1,4 @@
-package com.example.aftas.service.Impl;
+package com.example.aftas.service.impl;
 
 import com.example.aftas.dtos.FishDTO;
 import com.example.aftas.model.Fish;
