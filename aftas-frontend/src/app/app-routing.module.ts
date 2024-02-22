@@ -11,6 +11,8 @@ import {HuntingAddComponent} from "./components/hunting/hunting-add/hunting-add.
 import {FishAddComponent} from "./components/fish/fish-add/fish-add.component";
 import {RankingListComponent} from "./components/ranking/ranking-list/ranking-list.component";
 import {RankingAddComponent} from "./components/ranking/ranking-add/ranking-add.component";
+import {LoginComponent} from "./pages/auth/login/login.component";
+import {RegisterComponent} from "./pages/auth/register/register.component";
 
 const routes: Routes = [
   {
@@ -32,7 +34,9 @@ const routes: Routes = [
       { path: 'fish/list', component: FishComponent },
       { path: 'fish/add', component: FishAddComponent },
     ]
-  }
+  },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent }
 ];
 
 @NgModule({

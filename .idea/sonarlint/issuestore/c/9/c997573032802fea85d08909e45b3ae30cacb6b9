@@ -1,0 +1,6 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ËºÐâÿÿÿÿÿ
+J
+java:S1611X"5Remove the parentheses around the "element" parameter(¸­ƒa
+V
+java:S1612X"AReplace this lambda with method reference 'RankingMapper::toDto'.(¸­ƒa

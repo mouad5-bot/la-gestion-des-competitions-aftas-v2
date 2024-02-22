@@ -1,0 +1,18 @@
+#login {
+  position: relative;
+  height: 100vh;
+  background-image: url('../../../../assets/image/vff.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#formLogin{
+  color: #141526;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+
+
+

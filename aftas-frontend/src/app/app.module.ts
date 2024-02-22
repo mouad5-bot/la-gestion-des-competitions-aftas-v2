@@ -14,12 +14,14 @@ import { CompetitionAddComponent } from './components/competition/competition-ad
 import { FishAddComponent } from './components/fish/fish-add/fish-add.component';
 import { HuntingAddComponent } from './components/hunting/hunting-add/hunting-add.component';
 import { MemberAddComponent } from './components/member/member-add/member-add.component';
-import {CommonModule} from "@angular/common";
+import {CommonModule, NgOptimizedImage} from "@angular/common";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule} from '@angular/material/paginator';
 import {MatSelectModule} from "@angular/material/select";
 import { RankingListComponent } from './components/ranking/ranking-list/ranking-list.component';
 import { RankingAddComponent } from './components/ranking/ranking-add/ranking-add.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { RegisterComponent } from './pages/auth/register/register.component';
 
 @NgModule({
   declarations: [
@@ -35,17 +37,20 @@ import { RankingAddComponent } from './components/ranking/ranking-add/ranking-ad
     MemberAddComponent,
     RankingListComponent,
     RankingAddComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    CommonModule,
-    FormsModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    MatPaginatorModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        CommonModule,
+        FormsModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        MatPaginatorModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })

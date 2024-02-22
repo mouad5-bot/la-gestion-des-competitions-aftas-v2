@@ -1,0 +1,4 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ËºÐâÿÿÿÿÿ
+i
+java:S1602W"SRemove useless curly braces around statement and then remove useless return keyword(àßÜ§
