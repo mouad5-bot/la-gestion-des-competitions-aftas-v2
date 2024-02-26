@@ -41,7 +41,6 @@ public class SecurityConfig {
                 .cors()
                 .and()
                 .authorizeHttpRequests()
-                //.antMatchers("/api/v1/admin").hasAuthority(AuthoritiesConstants.ROLE_ADMIN)
                 .antMatchers("/api/v2/auth/**").permitAll()
                 .anyRequest().authenticated()
                 .and()

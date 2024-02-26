@@ -12,24 +12,6 @@ import {Router} from "@angular/router";
 
 @Injectable()
 export class TokenInterceptor implements HttpInterceptor {
-
-  // constructor() {}
-  //
-  // intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-  //
-  //   const accessToken = authUtils.currentAccessToken();
-  //   if (accessToken) {
-  //     request = request.clone({
-  //       setHeaders: {
-  //         Authorization: `Bearer ${accessToken}`
-  //       }
-  //     });
-  //   }
-  //
-  //   return next.handle(request);
-  // }
-
-
   constructor(private authenticationService: AuthService, private router: Router) {
   }
 
