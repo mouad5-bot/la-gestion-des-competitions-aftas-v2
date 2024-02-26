@@ -2,6 +2,8 @@ package com.example.aftas.service.impl;
 
 import com.example.aftas.dtos.RoleDto;
 import com.example.aftas.exception.EmailOrPasswordIncorrectException;
+import com.example.aftas.security.SecurityUtils;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.GrantedAuthority;
 import com.example.aftas.model.AppUser;
 import com.example.aftas.model.Role;
@@ -122,12 +124,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public AppUser getCurrentUser() {
-//        String currentUserLogin = SecurityUtils.getCurrentUserEmail();
-//        if(currentUserLogin == null)
-//            throw new BadCredentialsException("this user is not found !");
-//        return this.findByUsername(currentUserLogin);
-        return null;
-    }
+        String currentUserLogin = SecurityUtils.getUserEmail();
+        if(currentUserLogin == null)
+            throw new BadCredentialsException("this user is not found !");
+        return this.findByUsername(currentUserLogin);
+            }
 
     @Override
     public void delete(Long id) {

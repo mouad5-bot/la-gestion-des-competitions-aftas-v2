@@ -26,7 +26,7 @@
           <ul class="nav-right">
 
             <li class="user-profile header-notification">
-                <span>ADMINISTRATOR</span>
+                <span>Welcome {{  user?.name }}</span>
                 <i class="ti-angle-down"></i>
             </li>
           </ul>
@@ -77,6 +77,13 @@
                   <span class="pcoded-mtext">Level</span>
                 </a>
               </li>
+              <li class="mt-5">
+                <a routerLink="/logout" (click)="logout()">
+                  <span class="pcoded-micon"> <i class="bi bi-box-arrow-right"></i> </span>
+                  <span class="pcoded-mtext">Log Out</span>
+                </a>
+              </li>
+
             </ul>
           </div>
         </nav>

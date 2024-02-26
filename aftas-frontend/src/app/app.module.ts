@@ -4,7 +4,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MemberComponent } from './components/member/member-list/member.component';
 import { CompetitionComponent } from './components/competition/competition-list/competition.component';
@@ -17,11 +17,11 @@ import { MemberAddComponent } from './components/member/member-add/member-add.co
 import {CommonModule, NgOptimizedImage} from "@angular/common";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule} from '@angular/material/paginator';
-import {MatSelectModule} from "@angular/material/select";
 import { RankingListComponent } from './components/ranking/ranking-list/ranking-list.component';
 import { RankingAddComponent } from './components/ranking/ranking-add/ranking-add.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
+import {TokenInterceptor} from "./core/token.interceptor";
 
 @NgModule({
   declarations: [
@@ -51,7 +51,9 @@ import { RegisterComponent } from './pages/auth/register/register.component';
         MatPaginatorModule,
         NgOptimizedImage
     ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

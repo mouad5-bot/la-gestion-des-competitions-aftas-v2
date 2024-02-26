@@ -13,8 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class UserResponseDto {
     private Long id;
-    private String firstName;
-    private String lastName;
+    private String name;
     private String email;
     private LocalDateTime createdAt;
     private LocalDateTime verifiedAt;

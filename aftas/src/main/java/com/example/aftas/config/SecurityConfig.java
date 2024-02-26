@@ -28,7 +28,7 @@ import static org.springframework.security.config.http.SessionCreationPolicy.STA
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig {
 
     private final UserService userService;
     private final JwtFilter jwtAuthenticationFilter;
@@ -42,7 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeHttpRequests()
                 //.antMatchers("/api/v1/admin").hasAuthority(AuthoritiesConstants.ROLE_ADMIN)
-                .antMatchers("/api/v1/auth/**").permitAll()
+                .antMatchers("/api/v2/auth/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .sessionManagement(manager -> manager.sessionCreationPolicy(STATELESS))

@@ -3,3 +3,5 @@ Y
 java:S2166"CRename this class to remove "Exception" or correct its inheritance.(Ó¸í
 :
 java:S1165"$Make this "customError" field final.(áŸşĞ
+J
+java:S1948"-Make "customError" transient or serializable.(áŸşĞ8İ’—•İ1

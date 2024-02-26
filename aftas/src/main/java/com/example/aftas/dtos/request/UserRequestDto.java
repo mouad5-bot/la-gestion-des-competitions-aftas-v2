@@ -17,13 +17,9 @@ import java.util.List;
 public class UserRequestDto {
     private Long id;
 
-    @NotNull(message = "First name cannot be null")
-    @NotBlank(message = "First name cannot be blank")
-    private String firstName;
-
-    @NotBlank(message = "Last name cannot be blank")
-    @NotNull(message = "Last name cannot be null")
-    private String lastName;
+    @NotBlank(message = "name cannot be blank")
+    @NotNull(message = "name cannot be null")
+    private String name;
 
     @NotBlank(message = "Email cannot be blank")
     @NotNull(message = "Email cannot be null")
